@@ -1,0 +1,22 @@
+{
+    "name": "terrain-designer",
+    "version": "0.1.0",
+    "main": "main/main.js",
+    "scripts": {
+      "start": "concurrently \"npm:serve\" \"npm:electron\"",
+      "serve": "vite",
+      "electron": "wait-on http://localhost:5173 && electron ."
+    },
+    "devDependencies": {
+      "concurrently": "^8.0.1",
+      "electron": "^29.0.0",
+      "vite": "^5.0.0", 
+      "wait-on": "^7.0.1"
+    },
+    "dependencies": {
+      "react": "^18.0.0",
+      "react-dom": "^18.0.0",
+      "three": "^0.160.0",
+      "three-stdlib": "^2.23.1"
+    }
+  }
